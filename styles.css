@@ -22,6 +22,15 @@ header {
   display: flex;
   height: 25vh;
 }
+@media screen and (max-width: 600px) {
+  header {
+    height: 40vh;
+  }
+  .header-flex {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
 header .home a {
   display: block;
 }
@@ -284,6 +293,60 @@ th {
   color: #a9b2b9;
   line-height: 22px;
   padding: 5px;
+}
+
+/* venue styling*/
+.venue {
+  width: 70%;
+  height: 50vh;
+  padding-bottom: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media screen and (max-width) {
+  .venue {
+    flex-direction: column;
+  }
+}
+.map {
+  flex: 3;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.map-desc {
+  flex: 1;
+  margin-right: 10px;
+}
+.map-desc h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 44px;
+  color: #648880;
+}
+.map-desc p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #888888;
+}
+.map-desc a {
+  text-decoration: underline;
+  color: #a9b2b9;
+  font-weight: 300;
+  line-height: 22px;
+}
+iframe {
+  object-fit: cover;
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 /* footer */
 footer {
