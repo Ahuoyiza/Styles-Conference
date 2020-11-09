@@ -252,6 +252,39 @@ nav {
 .speakers .speaker-img a:hover {
   color: #a9b2b9;
 }
+/* schedule styling */
+.schedule {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+table {
+  width: 70%;
+  margin: 20px auto 30px auto;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 1px solid #cecfd5;
+  padding: 10px 15px;
+  width: 300px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+  color: #888888;
+  list-style: 22px;
+}
+tr:last-child td {
+  border-bottom: 0;
+}
+th {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a9b2b9;
+  line-height: 22px;
+  padding: 5px;
+}
 /* footer */
 footer {
   display: flex;
