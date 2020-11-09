@@ -165,7 +165,93 @@ nav {
   font-weight: 300;
   color: #888888;
 }
+/* speakers page styles */
+.tag-line {
+  background-image: linear-gradient(to right, #a1d3b0, #f5f1d3);
+  height: 35vh;
+  max-width: 100vw;
+  /* border: 2px solid #293f50; /* this fixes the issue of the margin between this section and the header */
+  color: #648880;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "lato";
+  text-align: center;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 600px) {
+  .tag-line {
+    margin-bottom: 10%;
+  }
+}
+.tag-line h2 {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 44px;
+}
+.tag-line p {
+  color: #888888;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.speakers {
+  width: 70%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.speakers .description {
+  flex: 3;
+}
+.speakers .speaker-img {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.speakers h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #648860;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.speakers h3 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #a9b2b9;
+}
+.speakers p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #888888;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+.speakers img {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  object-fit: cover;
+}
+.speakers .speaker-img a {
+  display: block;
+  color: #888888;
+  margin: 5px;
+}
+.speakers .speaker-img a:hover {
+  color: #a9b2b9;
+}
 /* footer */
 footer {
   display: flex;
